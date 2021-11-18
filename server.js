@@ -8,7 +8,7 @@ const routes = require('./api/routes/scoreRoutes');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(
-  'mongodb+srv://nifoo:9tdLinTmEwKj6OOZ@cluster0.vmw6l.mongodb.net/gweb-projet',
+  'mongodb+srv://guillaume:cKyvJYrtpAF7ZxFs@cluster0.vmw6l.mongodb.net/gweb-projet',
   { useNewUrlParser: true }
 );
 
