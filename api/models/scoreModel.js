@@ -6,7 +6,6 @@ const scoreSchema = new Schema(
   {
     pseudo: {
       type: String,
-      default: 'Anonyme'
     },
     nombre: {
       type: Number,
