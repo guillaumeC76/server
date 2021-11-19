@@ -4,9 +4,12 @@ const { Schema } = mongoose;
 
 const scoreSchema = new Schema(
   {
+    pseudo: {
+      type: String,
+    },
     nombre: {
       type: Number,
-      required: 'score cannot be blank'
+      required: 'Le score ne peux pas etre vide'
     },
   },
   { collection: 'score' }
