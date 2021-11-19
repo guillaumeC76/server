@@ -11,9 +11,6 @@ const scoreSchema = new Schema(
       type: Number,
       required: 'Le score ne peux pas etre vide'
     },
-    record: {
-      type: Number,
-    },
   },
   { collection: 'score' }
 );
