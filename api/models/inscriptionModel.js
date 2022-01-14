@@ -23,9 +23,9 @@ const inscriptionSchema = new Schema(
       type: String,
       required: 'Le password ne peux pas etre vide'
     },
-    comfirm_password: {
+    confirm_password: {
       type: String,
-      required: 'Le comfirm_password ne peux pas etre vide'
+      required: 'Le confirm_password ne peux pas etre vide'
     },
   },
   { collection: 'inscription' }
