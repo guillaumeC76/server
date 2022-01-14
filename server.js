@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 global.Score = require('./api/models/scoreModel');
 const routes_score = require('./api/routes/scoreRoutes');
 
-global.Inscription = require('./api/models/sinscriptionModel');
+global.Inscription = require('./api/models/inscriptionModel');
 const routes_inscription = require('./api/routes/inscriptionRoutes');
 
 mongoose.Promise = global.Promise;
