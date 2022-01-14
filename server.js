@@ -4,7 +4,10 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 global.Score = require('./api/models/scoreModel');
-const routes = require('./api/routes/scoreRoutes');
+const routes_score = require('./api/routes/scoreRoutes');
+
+global.Inscription = require('./api/models/sinscriptionModel');
+const routes_inscription = require('./api/routes/inscriptionRoutes');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(
@@ -19,7 +22,8 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-routes(app);
+routes_score(app);
+routes_inscription(app);
 app.listen(port);
 
 app.use((req, res) => {
